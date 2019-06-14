@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<!-- saved from url=(0103)https://s0.2mdn.net/8653098/1554932256563/CV~NFL_Bonvoy_MB~CY_LG~EN_CY~USD_CT~BAN_SZ~300X250/index.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="ad.size" content="width=300,height=250">
+    <title>Banner</title>
+
+    <style>
+        body { margin: 0 auto; padding: 0 auto; }
+        #banner { background-color: #000; margin: 0 auto; padding: 0 auto; }
+        .container { position: absolute; overflow: hidden; }
+
+        #banner_btn {
+            position: absolute;
+            border: 1px #999 solid;
+            z-index: 10;
+            -ms-filter: "alpha(opacity=0)";
+            filter: alpha(opacity=0);
+            -moz-opacity: 0;
+            -khtml-opacity: 0;
+            opacity: 0;
+            background: white
+        }
+
+        #banner_btn:hover { cursor: pointer }
+        #banner_border { position: absolute; top: 0; left: 0; border: 1px #999 solid; z-index: 9; }
+       #bg_swirl, #bg_player_3, #bg_player_2, #bg_player_1 {
+            position: absolute;
+            overflow: hidden;
+            width: 300px;
+            height: 250px;
+          }
+
+
+		#bg_swirl, #bg_player_3, #bg_player_2, #bg_player_1 {
+		   background:url("bg_sprite_sheet.jpg") no-repeat;
+		   opacity: 0;
+        }
+
+		#bg_swirl { background-position: -0px  0px; }
+		#bg_player_3 { background-position: -300px  0px; }
+		#bg_player_2 { background-position: -0px  -250px; opacity: 1; }
+		#bg_player_1 { background-position: -300px  -250px; opacity:1; }
+
+
+
+
+		#banner, .container, #banner_btn, #backGround,
+        #logo, #copy_1, #copy_2, #copy_2_us, #copy_3, #copy_4, #copy_5, #copy_6,
+        #copy_7, #copy_8, #cta, #end_logo, #end_copy, #lockup {
+            position: absolute;
+            overflow: hidden;
+            width: 300px;
+            height: 250px;
+          }
+
+
+        #banner, .container, #banner_btn {
+			top: 0px;
+            left: 0px;
+            -webkit-transform: translate3d(0, 0, 0);
+		}
+        #logo, #copy_1, #copy_2, #copy_2_us, #copy_3, #copy_4, #copy_5, #copy_6, #copy_7, #copy_8, #cta, #end_logo, #end_copy, #lockup {
+		   background:url("sprite_sheet.png") no-repeat;
+		   background-size: 1200px 1000px;
+		   opacity: 0;
+        }
+
+		#logo { background-position: -0px  0px; opacity: 1;}
+		#copy_1 { background-position: -300px  0px; left:-100px; }
+		#copy_2 { background-position: -600px  0px; left: -100px;}
+		#copy_2_us { background-position: -900px  0px; left:100px;}
+		#copy_3 { background-position: -0px  -250px; left: -100px;}
+		#copy_4 { background-position: -300px  -250px; left: -100px; }
+		#copy_5 { background-position: -600px  -250px; left: -50px; }
+		#copy_6 { background-position: -900px  -250px; left:100px;}
+		#copy_7 { background-position: -0px  -500px; left: -100px;}
+		#copy_8 { background-position: -300px  -500px; left:100px;}
+		#cta { background-position: -600px  -500px; }
+		#end_logo { background-position: -900px  -500px; }
+		#end_copy { background-position: -0px  -750px; }
+		#lockup { background-position: -300px  -750px; }
+
+
+    </style>
+<script type="text/javascript">
+    
+      (function() {
+        var relegateNavigation = '';
+        var handleClickTagMessage = function(e) {
+          try {
+            var eventData = JSON.parse(e.data);
+          } catch (err) {
+            return;
+          }
+          if (eventData.isInitClickTag) {
+            if (eventData.clickTags) {
+              for (var i = 0; i < eventData.clickTags.length; i++) {
+                var clkTag = eventData.clickTags[i];
+                window[clkTag.name] = clkTag.url;
+              }
+            } else if (eventData.clickTag) {
+              window.clickTag = eventData.clickTag;
+            }
+            relegateNavigation = eventData.relegateNavigation;
+          }
+        };
+
+        if (open.call) {
+          window.open = function(open) {
+            return function(url, name, features) {
+              if (relegateNavigation === 'parent') {
+                var message = {'clickTag': url, 'isPostClickTag': true};
+                parent.postMessage(JSON.stringify(message), '*');
+              } else {
+                var args = [url, name];
+                if (features) {
+                  args.push(features);
+                }
+                open.apply(window, args);
+              }
+            };
+          }(window.open);
+        }
+
+        if (window.addEventListener) {
+          window.addEventListener(
+              'message', handleClickTagMessage, false);
+        } else {
+          window.attachEvent('onmessage', handleClickTagMessage);
+        }
+      })();
+    
+  </script></head>
+
+<body onload="start();">
+    <div id="banner" class="container">
+        <div id="banner_border" style="width: 298px; height: 248px;"></div>
+        <div id="backGround"></div>
+
+	     <div id="bg_swirl" style="visibility: inherit; opacity: 1; transform: matrix3d(1, 0.000174533, 0, 0, -0.000174533, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);"></div>
+		 <div id="bg_player_3" style="visibility: hidden; opacity: 0; transform: matrix3d(1.5, 0.000261799, 0, 0, -0.000261799, 1.5, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);"></div>
+		 <div id="bg_player_2" style="visibility: hidden; opacity: 0; transform: matrix3d(1, 0.000174533, 0, 0, -0.000174533, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);"></div>
+		 <div id="bg_player_1" style="visibility: hidden; opacity: 0; transform: matrix3d(1.5, 0.000261799, 0, 0, -0.000261799, 1.5, 0, 0, 0, 0, 1, 0, -60, 0, 0, 1);"></div>
+
+
+
+	    <div id="logo" style="visibility: hidden; opacity: 0; transform: matrix3d(1, 0.000174533, 0, 0, -0.000174533, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);"></div>
+		<div id="copy_1" style="visibility: hidden; opacity: 0; transform: matrix3d(1, 0.000174533, 0, 0, -0.000174533, 1, 0, 0, 0, 0, 1, 0, 100, 0, 0, 1);"></div>
+		<div id="copy_2" style="visibility: hidden; opacity: 0; transform: matrix3d(1, 0.000174533, 0, 0, -0.000174533, 1, 0, 0, 0, 0, 1, 0, 100, 0, 0, 1);"></div>
+		<div id="copy_2_us" style="visibility: hidden; opacity: 0; transform: matrix3d(1, 0.000174533, 0, 0, -0.000174533, 1, 0, 0, 0, 0, 1, 0, -100, 0, 0, 1);"></div>
+		<div id="copy_3" style="visibility: hidden; opacity: 0; transform: matrix3d(1, 0.000174533, 0, 0, -0.000174533, 1, 0, 0, 0, 0, 1, 0, 100, 0, 0, 1);"></div>
+		<div id="copy_4" style="visibility: hidden; opacity: 0; transform: matrix3d(1, 0.000174533, 0, 0, -0.000174533, 1, 0, 0, 0, 0, 1, 0, 105, 0, 0, 1);"></div>
+		<div id="copy_5" style="visibility: hidden; opacity: 0; transform: matrix3d(1, 0.000174533, 0, 0, -0.000174533, 1, 0, 0, 0, 0, 1, 0, -50, 0, 0, 1);"></div>
+		<div id="copy_6" style="visibility: hidden; opacity: 0; transform: matrix3d(1, 0.000174533, 0, 0, -0.000174533, 1, 0, 0, 0, 0, 1, 0, -100, 0, 0, 1);"></div>
+		<div id="copy_7" style="visibility: hidden; opacity: 0; transform: matrix3d(1, 0.000174533, 0, 0, -0.000174533, 1, 0, 0, 0, 0, 1, 0, 100, 0, 0, 1);"></div>
+		<div id="copy_8" style="visibility: hidden; opacity: 0; transform: matrix3d(1, 0.000174533, 0, 0, -0.000174533, 1, 0, 0, 0, 0, 1, 0, -100, 0, 0, 1);"></div>
+		<div id="cta" style="visibility: inherit; opacity: 1; transform: matrix3d(1, 0.000174533, 0, 0, -0.000174533, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);"></div>
+		<div id="end_logo" style="visibility: inherit; opacity: 1; transform: matrix3d(1, 0.000174533, 0, 0, -0.000174533, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);"></div>
+		<div id="end_copy" style="visibility: inherit; opacity: 1; transform: matrix3d(1, 0.000174533, 0, 0, -0.000174533, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);"></div>
+		<div id="lockup" style="visibility: inherit; opacity: 1; transform: matrix3d(1, 0.000174533, 0, 0, -0.000174533, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);"></div>
+
+        <div id="banner_btn" style="visibility: visible;"></div>
+    </div>
+	<script src="./TweenMax.min.js.download"></script>
+    <script>
+        /* banner specific scripts */
+        var clickTag = "http://www.google.com/";
+        var frameList = ["#background", "#logo", "#copy_1", "#copy_2", "#copy_2_us", "#copy_3", "#copy_4", "#copy_5", "#copy_6", "#copy_7", "#copy_8", "#end_logo", "#end_copy", "#lockup", "#cta"];
+        var globalProps = {
+            frameCount: [],
+            delays: [],
+            width: 300,
+            height: 250,
+            stepCount: 0
+        }
+
+        var thedelay = 1250;
+        var delayCounter = 0;
+
+        var globalVar = {};
+        globalVar.easeing = Quint.easeOut;
+        globalVar.bannerBtn = document.getElementById("banner_btn");
+
+        addEvent("click", globalVar.bannerBtn, ctaClick);
+
+
+        function start() {
+            var endFrame = false;
+            var endFrameQS = getQuerystring("endframe");
+            if (endFrameQS != "") endFrame = true;
+
+            globalVar.bannerBtn.style.visibility = "visible";
+
+			document.getElementById("banner_border").style.width = (globalProps.width-2) + "px";
+            document.getElementById("banner_border").style.height = (globalProps.height-2) + "px";
+
+
+
+            TweenLite.delayedCall(.01,frame1);
+
+
+
+        }
+
+
+        function frame1(){
+			console.log('frame1');
+
+			TweenLite.to(bg_player_1 , 1.5, {
+                autoAlpha: 0,
+                scale: 1.5,
+                ease: globalVar.easeing,
+                delay: 1,
+                force3D: true,
+                rotationZ: 0.01,
+                y: 0,
+                x: -60
+          	});
+
+
+
+      TweenLite.delayedCall(1,frame2);
+        }
+
+        function frame2(){
+			console.log('frame2');
+
+			TweenLite.to(copy_1, 1.5, {
+                autoAlpha: 1,
+                x: 100 ,
+                ease: globalVar.easeing,
+                delay: 0,
+                force3D: true,
+                rotationZ: 0.01
+          	});
+
+          	TweenLite.to(copy_2, 1.5, {
+                autoAlpha: 1,
+                x: 100,
+                ease: globalVar.easeing,
+                delay: .3,
+                force3D: true,
+                rotationZ: 0.01
+          	});
+          	TweenLite.to(copy_2_us, 1.5, {
+                autoAlpha: 1,
+                x: -100,
+                ease: globalVar.easeing,
+                delay: .4,
+                force3D: true,
+                rotationZ: 0.01
+          	});
+
+          	TweenLite.to(copy_3, 1.5, {
+                autoAlpha: 1,
+                x: 100,
+                ease: globalVar.easeing,
+                delay: .6,
+                force3D: true,
+                rotationZ: 0.01
+          	});
+
+
+			TweenLite.to(bg_player_1 , 1.5, {
+                autoAlpha: 0,
+                scale: 1.5,
+                ease: globalVar.easeing,
+                delay: 0,
+                force3D: true,
+                rotationZ: 0.01,
+                y: 0,
+                x: -60
+          	});
+
+
+
+
+
+          	TweenLite.to([copy_1,copy_2, copy_2_us, copy_3], .5, {
+                autoAlpha: 0,
+                ease: globalVar.easeing,
+                delay: 3,
+                force3D: true,
+                rotationZ: 0.01
+          	});
+
+
+
+
+		 	TweenLite.delayedCall(3,frame3);
+        }
+
+        function frame3(){
+			console.log('frame3');
+			TweenLite.to(bg_player_2 , .5, {
+                autoAlpha: 0,
+                scale: 1,
+                ease: globalVar.easeing,
+                delay: 0,
+                force3D: true,
+                rotationZ: 0.01
+          	});
+
+          	TweenLite.to(bg_player_3, .5, {
+                autoAlpha: 1,
+                scale: 1,
+                ease: globalVar.easeing,
+                delay: 0,
+                force3D: true,
+                rotationZ: 0.01
+          	});
+
+
+
+	        TweenLite.to(copy_4, 1.5, {
+                autoAlpha: 1,
+                x: 105,
+                ease: globalVar.easeing,
+                delay: .3,
+                force3D: true,
+                rotationZ: 0.01
+          	});
+
+          	TweenLite.to(copy_6, 1.5, {
+                autoAlpha: 1,
+                x: -100,
+                ease: globalVar.easeing,
+                delay: .6,
+                force3D: true,
+                rotationZ: 0.01
+          	});
+
+
+          	TweenLite.to(copy_5, 1.5, {
+                autoAlpha: 1,
+                x: 50,
+                ease: globalVar.easeing,
+                delay: .9,
+                force3D: true,
+                rotationZ: 0.01
+          	});
+
+
+          	TweenLite.to(copy_7, 1.5, {
+                autoAlpha: 1,
+                x: 100,
+                ease: globalVar.easeing,
+                delay: 1.2,
+                force3D: true,
+                rotationZ: 0.01
+          	});
+
+		  	TweenLite.delayedCall(2,frame4);
+        }
+
+        function frame4(){
+			console.log('frame4');
+
+	        TweenLite.to( bg_player_3 , 1.5, {
+                scale: 1,
+                ease: globalVar.easeing,
+                delay: 0,
+                force3D: true,
+                rotationZ: 0.01
+          	});
+
+
+
+
+	        TweenLite.to(copy_5, 2.5, {
+                autoAlpha: 0,
+                x: -50,
+                ease: globalVar.easeing,
+                delay: .4,
+                force3D: true,
+                rotationZ: 0.01
+          	});
+
+	        TweenLite.to(copy_8, 1.5, {
+                autoAlpha: 1,
+                x: -100,
+                ease: globalVar.easeing,
+                delay: .4,
+                force3D: true,
+                rotationZ: 0.01
+          	});
+
+
+
+          	TweenLite.delayedCall(2.5,frame5);
+        }
+
+		function frame5(){
+			console.log('frame5');
+
+	        TweenLite.to( bg_player_3 , 1.5, {
+                autoAlpha: 0,
+                scale: 1.5,
+                ease: globalVar.easeing,
+                delay: 0,
+                force3D: true,
+                rotationZ: 0.01
+          	});
+
+          	TweenLite.to( bg_swirl, 1.5, {
+                autoAlpha: 1,
+                scale: 1,
+                ease: globalVar.easeing,
+                delay: 0,
+                force3D: true,
+                rotationZ: 0.01
+          	});
+
+
+	        TweenLite.to([copy_4, copy_5, copy_6, copy_7 , copy_8, logo], .5, {
+                autoAlpha: 0,
+                ease: globalVar.easeing,
+                delay: 0,
+                force3D: true,
+                rotationZ: 0.01
+          	});
+
+
+          	TweenLite.to(end_logo, 1.5, {
+                autoAlpha: 1,
+                ease: globalVar.easeing,
+                delay: .4,
+                force3D: true,
+                rotationZ: 0.01
+          	});
+
+          	TweenLite.to(end_copy, 1.5, {
+                autoAlpha: 1,
+                ease: globalVar.easeing,
+                delay: .7,
+                force3D: true,
+                rotationZ: 0.01
+          	});
+
+          	TweenLite.to(cta, 1.5, {
+                autoAlpha: 1,
+                ease: globalVar.easeing,
+                delay: 1,
+                force3D: true,
+                rotationZ: 0.01
+          	});
+
+          	TweenLite.to(lockup, 1.5, {
+                autoAlpha: 1,
+                ease: globalVar.easeing,
+                delay: 1.3,
+                force3D: true,
+                rotationZ: 0.01
+          	});
+          	console.log('done');
+
+          	addRoll(globalVar.bannerBtn, ctaRoll);
+        }
+
+        //utility scripts
+        function ctaClick() {
+            window.open(clickTag);
+        }
+
+        function addRoll(theBtn, theFunc) {
+            var img = document.createElement("img");
+            if (img.addEventListener) {
+                addEvent("mouseover", theBtn, theFunc);
+                addEvent("mouseout", theBtn, theFunc);
+            } else {
+                addEvent("onmouseover", theBtn, theFunc);
+                addEvent("onmouseout", theBtn, theFunc);
+            }
+        }
+
+        function ctaRoll(evt) {
+        	if(evt.type === "mouseout"){
+
+        	}
+        	else{
+
+        	}
+        }
+
+        function addEvent(evnt, elem, func) {
+            if (elem.addEventListener) // W3C DOM
+                elem.addEventListener(evnt, func, false);
+            else if (elem.attachEvent) { // IE DOM
+                elem.attachEvent("on" + evnt, func);
+            } else { // No much to do
+                elem[evnt] = func;
+            }
+        }
+
+
+		 function checkImage(src, divId) {
+		  var img = new Image();
+		  img.onload = function() {
+		      // code to set the src on success
+		      document.getElementById(divId).style.background = "url(" + src + ") no-repeat 50% 50%";
+		  };
+		  img.onerror = function() {
+		    // doesn"t exist or error loading
+		    document.getElementById(divId).backgroundColor = "#000000";
+		  };
+
+		  img.src = src; // fires off loading of image
+		}
+
+
+        (function() {
+            var method;
+            var noop = function() {};
+            var methods = [
+                "assert", "clear", "count", "debug", "dir", "dirxml", "error",
+                "exception", "group", "groupCollapsed", "groupEnd", "info", "log",
+                "markTimeline", "profile", "profileEnd", "table", "time", "timeEnd",
+                "timeStamp", "trace", "warn"
+            ];
+            var length = methods.length;
+            var console = (window.console = window.console || {});
+            while (length--) {
+                method = methods[length];
+                if (!console[method]) {
+                    console[method] = noop;
+                }
+            }
+        }());
+
+
+        function getQuerystring(key, default_) {
+            if (default_==null) default_="";
+            key = key.replace(/[[]/,"\[").replace(/[]]/,"\]");
+            var regex = new RegExp("[\?&]"+key+"=([^&#]*)");
+            var qs = regex.exec(window.location.href);
+            if(qs == null) {
+            return default_;
+            } else {
+            return qs[1];
+            }
+        }
+
+    </script>
+
+</body></html>
